@@ -10,6 +10,7 @@
 		765B05371E202C1F002B5506 /* IOSFrameworkProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765B052D1E202C1F002B5506 /* IOSFrameworkProject.framework */; };
 		765B053C1E202C1F002B5506 /* IOSFrameworkProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B053B1E202C1F002B5506 /* IOSFrameworkProjectTests.swift */; };
 		765B053E1E202C1F002B5506 /* IOSFrameworkProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 765B05301E202C1F002B5506 /* IOSFrameworkProject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9F8C93B1E38B96900682413 /* ToastClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8C93A1E38B96900682413 /* ToastClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		765B05361E202C1F002B5506 /* IOSFrameworkProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFrameworkProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765B053B1E202C1F002B5506 /* IOSFrameworkProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSFrameworkProjectTests.swift; sourceTree = "<group>"; };
 		765B053D1E202C1F002B5506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F8C93A1E38B96900682413 /* ToastClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				765B05301E202C1F002B5506 /* IOSFrameworkProject.h */,
 				765B05311E202C1F002B5506 /* Info.plist */,
+				C9F8C93A1E38B96900682413 /* ToastClass.swift */,
 			);
 			path = IOSFrameworkProject;
 			sourceTree = "<group>";
@@ -148,6 +151,8 @@
 				TargetAttributes = {
 					765B052C1E202C1F002B5506 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MTW96AJJ68;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					765B05351E202C1F002B5506 = {
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F8C93B1E38B96900682413 /* ToastClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +326,11 @@
 		765B05421E202C1F002B5506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MTW96AJJ68;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -331,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pico.IOSFrameworkProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,8 +348,10 @@
 		765B05431E202C1F002B5506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MTW96AJJ68;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -356,6 +368,7 @@
 		765B05451E202C1F002B5506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = IOSFrameworkProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pico.IOSFrameworkProjectTests;
@@ -367,6 +380,7 @@
 		765B05461E202C1F002B5506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = IOSFrameworkProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pico.IOSFrameworkProjectTests;
@@ -394,6 +408,7 @@
 				765B05431E202C1F002B5506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		765B05441E202C1F002B5506 /* Build configuration list for PBXNativeTarget "IOSFrameworkProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +417,7 @@
 				765B05461E202C1F002B5506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
