@@ -1,8 +1,9 @@
 lane :bonjour do
+
   UI.success "Bravo !"
+  
   scan(
     project: "IOSFrameworkProject.xcodeproj"
   )
-  xcov
 
 end
