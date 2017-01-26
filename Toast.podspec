@@ -9,7 +9,6 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "10.1"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/PicoPark/IOSFrameworkProject/Toast.git", tag: "v#{spec.version}", submodules: true }
-  spec.source_files = "RGB/**/*.{h,swift}"
+  spec.source_files = "IOSFrameworkProject/**/*.{h,swift}"
 
-  spec.dependency "Curry", "~> 1.4.0"
 end

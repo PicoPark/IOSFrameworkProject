@@ -14,3 +14,4 @@ before_install:
   - bundle install
 script:
   - bundle exec fastlane ExecutionTest
+  - bundle exec fastlane DeployementMaster
