@@ -17,15 +17,14 @@ open class Toast {
     var view: UIView!
     
     var title: UILabel!
-    let appDel: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-
     
     
-    private func createToast(message: String, type: ToasType) -> UIView {
+    
+    private func createToast(message: String, MainView: UIView,type: ToasType) -> UIView {
         //        self.view = UIView(frame: frame)
         //        self.view.backgroundColor = .clear
         
-        self.title = UILabel(frame: CGRect(x:20.0, y:(appDel.window?.rootViewController?.view.frame.size.height)!-80, width:(appDel.window?.rootViewController?.view.frame.size.width)!-40, height:60))
+        self.title = UILabel(frame: CGRect(x:20.0, y:(MainView.frame.size.height)-80, width:(MainView.frame.size.width)-40, height:60))
         self.title.textAlignment = .center
         self.title.text = message
         self.title.textColor = UIColor.black
@@ -49,17 +48,17 @@ open class Toast {
     
     
     
-    func warningToast( message: String)  {
-        appDel.window?.rootViewController?.view.addSubview(self.createToast(message: message, type: .warning))
+    func warningToast( message: String, viewMain:UIView)  {
+        viewMain.addSubview(self.createToast(message: message, MainView: viewMain,type: .warning))
     }
     
-    func infoToast(message: String) {
-        appDel.window?.rootViewController?.view.addSubview(self.createToast(message: message, type: .info))
+    func infoToast(message: String,viewMain:UIView) {
+        viewMain.addSubview(self.createToast(message: message, MainView: viewMain,type: .info))
         
     }
     
-    func dangerToast(frame: CGRect, message: String)  {
-        appDel.window?.rootViewController?.view.addSubview(self.createToast(message: message , type: .danger))
+    func dangerToast( message: String,viewMain:UIView)  {
+        viewMain.addSubview(self.createToast(message: message , MainView: viewMain, type: .danger))
     }
     
     private init() {
