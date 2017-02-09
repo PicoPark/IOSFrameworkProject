@@ -10,6 +10,12 @@
 		765B05371E202C1F002B5506 /* IOSFrameworkProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765B052D1E202C1F002B5506 /* IOSFrameworkProject.framework */; };
 		765B053C1E202C1F002B5506 /* IOSFrameworkProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B053B1E202C1F002B5506 /* IOSFrameworkProjectTests.swift */; };
 		765B053E1E202C1F002B5506 /* IOSFrameworkProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 765B05301E202C1F002B5506 /* IOSFrameworkProject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93201E81E4C57CD008BDE49 /* danger.png in Resources */ = {isa = PBXBuildFile; fileRef = C93201E21E4C57CD008BDE49 /* danger.png */; };
+		C93201E91E4C57CD008BDE49 /* danger.wav in Resources */ = {isa = PBXBuildFile; fileRef = C93201E31E4C57CD008BDE49 /* danger.wav */; };
+		C93201EA1E4C57CD008BDE49 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = C93201E41E4C57CD008BDE49 /* info.png */; };
+		C93201EB1E4C57CD008BDE49 /* info.wav in Resources */ = {isa = PBXBuildFile; fileRef = C93201E51E4C57CD008BDE49 /* info.wav */; };
+		C93201EC1E4C57CD008BDE49 /* warning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C93201E61E4C57CD008BDE49 /* warning.mp3 */; };
+		C93201ED1E4C57CD008BDE49 /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = C93201E71E4C57CD008BDE49 /* warning.png */; };
 		C9F8C93B1E38B96900682413 /* ToastClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8C93A1E38B96900682413 /* ToastClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +36,12 @@
 		765B05361E202C1F002B5506 /* IOSFrameworkProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFrameworkProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765B053B1E202C1F002B5506 /* IOSFrameworkProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSFrameworkProjectTests.swift; sourceTree = "<group>"; };
 		765B053D1E202C1F002B5506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93201E21E4C57CD008BDE49 /* danger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danger.png; sourceTree = "<group>"; };
+		C93201E31E4C57CD008BDE49 /* danger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = danger.wav; sourceTree = "<group>"; };
+		C93201E41E4C57CD008BDE49 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		C93201E51E4C57CD008BDE49 /* info.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = info.wav; sourceTree = "<group>"; };
+		C93201E61E4C57CD008BDE49 /* warning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = warning.mp3; sourceTree = "<group>"; };
+		C93201E71E4C57CD008BDE49 /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
 		C9F8C93A1E38B96900682413 /* ToastClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +85,12 @@
 		765B052F1E202C1F002B5506 /* IOSFrameworkProject */ = {
 			isa = PBXGroup;
 			children = (
+				C93201E21E4C57CD008BDE49 /* danger.png */,
+				C93201E31E4C57CD008BDE49 /* danger.wav */,
+				C93201E41E4C57CD008BDE49 /* info.png */,
+				C93201E51E4C57CD008BDE49 /* info.wav */,
+				C93201E61E4C57CD008BDE49 /* warning.mp3 */,
+				C93201E71E4C57CD008BDE49 /* warning.png */,
 				765B05301E202C1F002B5506 /* IOSFrameworkProject.h */,
 				765B05311E202C1F002B5506 /* Info.plist */,
 				C9F8C93A1E38B96900682413 /* ToastClass.swift */,
@@ -184,6 +202,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93201ED1E4C57CD008BDE49 /* warning.png in Resources */,
+				C93201EC1E4C57CD008BDE49 /* warning.mp3 in Resources */,
+				C93201EB1E4C57CD008BDE49 /* info.wav in Resources */,
+				C93201E81E4C57CD008BDE49 /* danger.png in Resources */,
+				C93201E91E4C57CD008BDE49 /* danger.wav in Resources */,
+				C93201EA1E4C57CD008BDE49 /* info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
