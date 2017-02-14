@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "10.1"
   spec.requires_arc = true
-  spec.source = { git: "https://github.com/PicoPark/IOSFrameworkProject/Toast.git", tag: "v#{spec.version}", submodules: true }
+  spec.source = { git: "https://github.com/PicoPark/IOSFrameworkProject.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = "IOSFrameworkProject/**/*.{h,swift}"
   spec.xcconfig    = { 'SWIFT_VERSION' => '2.3' }
 
