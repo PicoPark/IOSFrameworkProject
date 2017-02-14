@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "ToastESGI"
-  spec.version = "1.0.1"
+  spec.version = "2.0.0"
   spec.summary = "Simple Framework pour afficher des toasts personnalisés."
   spec.homepage = "https://github.com/PicoPark/IOSFrameworkProject"
   spec.license = { type: 'MIT', file: 'LICENSE' }
