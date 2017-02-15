@@ -7,24 +7,23 @@ Projet Final iOS
 
 ## Installation
 
-
+Install with CocoaPods by adding the following to your Podfile:
+```shell
+platform :ios, '10.1'
+pod 'ToastESGI', :git => 'https://github.com/PicoPark/IOSFrameworkProject.git'
+```
 
 ## Features
 
 * Xcode setup and ready to deploy Swift Framework
-* [Travis](https://travis-ci.org) : Travis CI is configure into [.travis.yml](.travis.yml) and ready to execute [Digipolitan CI lanes](https://github.com/Digipolitan/fastlane-ios-ci-framework)
-* [Fastlane](https://fastlane.tools/) : The [Fastfile](fastlane/Fastfile) is configure to download [Digipolitan CI lanes](https://github.com/Digipolitan/fastlane-ios-ci-framework)
-* [Swift Package Manager](https://github.com/apple/swift-package-manager) : The [Package.swift](Package.swift) created without dependencies
 * [CocoaPods](https://cocoapods.org/) : The [Podfile](Podfile) and the [Podspec](DGFrameworkTemplate.podspec) are created without dependencies
-* [SwifLint](https://github.com/realm/SwiftLint) : The [.swiftlint.yml](.swiftlint.yml) is created and a run script is added to **Xcode Build Phases** to run for each build
 * [RubyGems](https://rubygems.org/) : The [Gemfile](Gemfile) contains ruby dependencies such as Fastlane, run `bundle install` to install these dependencies into your machine
-* [Homebrew](http://brew.sh/index_fr.html) : The [Brewfile](Brewfile) contains non-ruby dependencies such as git-flow, run `brew bundle` to install these dependencies into your machine
+
 
 ## How to deploy ?
 
-First install deployment dependencies
 ```shell
-bundle install && brew bundle
+Toast.shared.warningToast(message: "Mon message dans le toast", viewMain: self.view, duration: .long, position: .top,sound: true)
 ```
 
 ## License

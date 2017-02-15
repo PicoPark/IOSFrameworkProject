@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "ToastESGI"
-  spec.version = "1.0.1"
+  spec.version = "1.0.2"
   spec.summary = "Simple Framework pour afficher des toasts personnalisés."
   spec.homepage = "https://github.com/PicoPark/IOSFrameworkProject"
   spec.license = { type: 'MIT', file: 'LICENSE' }
@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "10.1"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/PicoPark/IOSFrameworkProject.git", tag: "v#{spec.version}", submodules: true }
-  spec.source_files = "IOSFrameworkProject/**/*.{h,swift}"
+  spec.source_files = "IOSFrameworkProject/**/*.{h,swift,png,wav,mp3}"
   spec.xcconfig    = { 'SWIFT_VERSION' => '2.3' }
 
 end
