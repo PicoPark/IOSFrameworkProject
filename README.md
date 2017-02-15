@@ -16,14 +16,14 @@ pod 'ToastESGI', :git => 'https://github.com/PicoPark/IOSFrameworkProject.git'
 ## Features
 
 * Xcode setup and ready to deploy Swift Framework
-* [CocoaPods](https://cocoapods.org/) : The [Podfile](Podfile) and the [Podspec](DGFrameworkTemplate.podspec) are created without dependencies
+* [CocoaPods](https://cocoapods.org/) : The [Podfile](Podfile) and the [Podspec](ToastESGI.podspec) are created without dependencies
 * [RubyGems](https://rubygems.org/) : The [Gemfile](Gemfile) contains ruby dependencies such as Fastlane, run `bundle install` to install these dependencies into your machine
 
 
 ## How to deploy ?
 
 ```shell
-Toast.shared.warningToast(message: "Mon message dans le toast", viewMain: self.view, duration: .long, position: .top,sound: true)
+Toast.shared.warningToast(message: "Mon message toast", viewMain: self.view, duration: .long, position: .top,sound: true)
 ```
 
 ## License
