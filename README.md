@@ -1,9 +1,9 @@
 # IOSFrameworkProject
 Projet Final iOS
 
-[![Build Status](https://travis-ci.org/Digipolitan/framework-swift-template.svg?branch=master)](https://travis-ci.org/Digipolitan/framework-swift-template)
+[![Build Status](https://travis-ci.org/Digipolitan/framework-swift-template.svg?branch=master)](https://travis-ci.org/PicoPark/IOSFrameworkProject)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DGFrameworkTemplate.svg)](https://img.shields.io/cocoapods/v/DGFrameworkTemplate.svg)
-[![Platform](https://img.shields.io/cocoapods/p/DGFrameworkTemplate.svg?style=flat)](http://cocoadocs.org/docsets/DGFrameworkTemplate)
+[![Platform](https://img.shields.io/cocoapods/p/Macaw.svg?style=flat)](http://cocoapods.org/pods/ToastESGI)
 
 ## Installation
 
